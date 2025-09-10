@@ -23,7 +23,7 @@ from aiortc import (
 from av.audio.frame import AudioFrame
 from numpy import ndarray
 from openai._models import construct_type_unchecked
-from openai.resources.beta.realtime.realtime import AsyncRealtimeConnection
+from openai.resources.realtime.realtime import AsyncRealtimeConnection
 from openai.types.beta.realtime import (
     ConversationItemCreateEvent,
     ConversationItemDeleteEvent,
@@ -36,9 +36,9 @@ from openai.types.beta.realtime import (
     ResponseCancelEvent,
     ResponseCreateEvent,
     ResponseFunctionCallArgumentsDoneEvent,
-    SessionUpdateEvent,
 )
 from openai.types.beta.realtime.response_create_event import Response
+from openai.types.realtime import SessionUpdateEvent
 from pydantic import Field, PrivateAttr
 
 from semantic_kernel.connectors.ai.function_call_choice_configuration import FunctionCallChoiceConfiguration
