@@ -37,7 +37,7 @@ dependencies = [
     "numpy >= 1.25.0; python_version < '3.12'",
     "numpy >= 1.26.0; python_version >= '3.12'",
     # openai connector
-    "openai >= 1.98.0",
+    "openai >= 1.104.2",
     # openapi and swagger
     "openapi_core >= 0.18,<0.20",
     "websockets >= 13, < 16",
@@ -94,20 +94,20 @@ google = [
 hugging_face = [
     "transformers[torch] ~= 4.28",
     "sentence-transformers >= 2.2,< 6.0",
-    "torch == 2.8.0"
+    "torch == 2.7.1"
 ]
 mcp = [
     "mcp>=1.8",
 ]
 milvus = [
-    "pymilvus >= 2.3,< 2.7",
+    "pymilvus >= 2.3,< 2.6",
     "milvus >= 2.3,<2.3.8; platform_system != 'Windows'"
 ]
 mistralai = [
     "mistralai >= 1.2,< 2.0"
 ]
 mongo = [
-    "pymongo >= 4.8.0, < 4.15",
+    "pymongo >= 4.8.0, < 4.14",
     "motor >= 3.3.2,< 3.8.0"
 ]
 notebooks = [
